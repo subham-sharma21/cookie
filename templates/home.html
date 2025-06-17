@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Fortune Cookie</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="glitter-burst" id="burstTitle">🔮 Tech Fortune Cookie 🔮</h1>
+    <div id="sparkle-container"></div>
+
+
+    <div id="cookie">🍪</div>
+
+    <div id="fortune-box">
+        <p>{{ fortune }}</p>
+        <button id="download-btn">📸 Download Your Fortune</button>
+    </div>
+
+    <br><br>
+    <a href="/">🔁 Get Another Fortune</a> |
+    <a href="/about">📘 About</a>
+
+    <script src="{{ url_for('static', filename='sparkle.js') }}"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="{{ url_for('static', filename='html2canvas.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
